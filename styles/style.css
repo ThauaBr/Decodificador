@@ -96,7 +96,7 @@ header {
 
 .container-return {
     width: 30%;
-    /* height: 90vh; */
+    height: 90vh;
     margin: 2.4% 4% 8%;
     display: flex;
     flex-direction: column;
