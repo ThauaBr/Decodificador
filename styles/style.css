@@ -111,6 +111,8 @@ header {
 }
 
 .container-return__box {
+    word-break: break-all;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
