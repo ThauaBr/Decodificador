@@ -112,8 +112,6 @@ header {
 }
 
 .container-return__box {
-    word-break: break-word;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,6 +124,8 @@ header {
 
 .container-return__box__msg {
     line-height: 2rem;
+    word-break: break-word;
+    overflow: auto;
 }
 
 .img-principal {
@@ -223,9 +223,9 @@ header {
         padding: 4%;
     }
 
-    .container-return__box__msg{
-        margin: 0;
-        font-size: auto;
+    .container-return__box {
+        height: 70%;
+        width: 90%;
     }
 
     .img-principal {
@@ -295,11 +295,20 @@ header {
         padding: 3%;
     }
 
+    .container-return__box{
+        height: 70%;
+        width: 90%;
+    }
+
     .img-principal {
         display: none;
     }
 
     .container-return__copy {
-        height: 6rem;
+       width: 60%;
+       height: 3.5rem;
+       border-radius: 20px;
+       font-size: auto;
+       border: none;
     }
   }
