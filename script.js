@@ -6,13 +6,27 @@ var buttonCopy = document.querySelector('.container-return__copy');
 var photo = document.querySelector('.img-principal');
 
 
-
 function encrypt(text){
     let textUsuary = text.value;
     let cryptoMsg = textUsuary.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
 
-
     return cryptoMsg;
+}
+
+
+function decrypt(text){
+    let textUsuary = text.value;
+    let cryptoMsg = textUsuary.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+    
+    return cryptoMsg;
+}
+
+
+function copy(){
+    navigator.clipboard.writeText(resultado.innerText);
+
+    resultado.textContent = `O seu texto foi copiado. Continue criptografando ou descriptografando suas mensagens!`;
+    buttonCopy.style.display = 'none';
 }
 
 buttonEncrypt.addEventListener('click', ()=>{
@@ -25,15 +39,6 @@ buttonEncrypt.addEventListener('click', ()=>{
 
 })
 
-
-
-function decrypt(text){
-    let textUsuary = text.value;
-    let cryptoMsg = textUsuary.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
-
-    return cryptoMsg;
-}
-
 buttonDecrypt.addEventListener('click', ()=>{
     resultado.textContent = decrypt(textarea);
     textarea.value = '';
@@ -42,6 +47,5 @@ buttonDecrypt.addEventListener('click', ()=>{
     buttonCopy.style.display = 'block';
 })
 
-buttonCopy.addEventListener('click', ()=>{
-    
-})
+
+buttonCopy.addEventListener('click', copy)

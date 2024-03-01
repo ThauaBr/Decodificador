@@ -16,6 +16,7 @@
     font-family: 'Kode Mono', sans-serif;
 }
 
+
 header {
     position: fixed;
     margin-top: 1%;
@@ -24,7 +25,7 @@ header {
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 93.5vh;
     display: flex;
     justify-content:space-around;
     background-color: var(--primary-color);
@@ -96,7 +97,7 @@ header {
 
 .container-return {
     width: 30%;
-    height: 90vh;
+    height: 88%;
     margin: 2.4% 4% 8%;
     display: flex;
     flex-direction: column;
@@ -111,7 +112,7 @@ header {
 }
 
 .container-return__box {
-    word-break: break-all;
+    word-break: break-word;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -120,7 +121,6 @@ header {
     text-align: center;
     width: 80%;
     height: 80%;
-    border-radius: 20px;
     gap: 40px;
 }
 
@@ -159,16 +159,24 @@ header {
 
 
 @media only screen and (max-width: 480px) {
+
+    header {
+        position:static;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        margin: 0;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        height: 80vh;
         justify-content: center;
     }
 
     .container__form {
-        margin: 5% 0% 8%;
-        padding-top: 3rem;
+        margin: 1% 0% 8%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -178,8 +186,8 @@ header {
 
     .container-form__textarea {
         height: 58%;
-        font-size: 1.25rem;
-        padding: 0.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .container-form__rodape {
@@ -211,9 +219,13 @@ header {
     .container-return{
         margin: 0;
         width: 90%;
-        height: auto;
-        font-size: 0.75rem;
-        padding: 5%;
+        height: 35%;
+        padding: 4%;
+    }
+
+    .container-return__box__msg{
+        margin: 0;
+        font-size: auto;
     }
 
     .img-principal {
@@ -226,7 +238,7 @@ header {
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 800px) {
     
     .container {
         flex-direction: column;
@@ -237,7 +249,7 @@ header {
 
     .container__form {
         margin: 5% 0 10%;
-        padding-top: 2.5rem;
+        padding-top: 4rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -278,9 +290,9 @@ header {
     .container-return{
         margin: 0;
         width: 90%;
-        height: auto;
+        height: 30%;
         font-size: 1rem;
-        padding: 5%;
+        padding: 3%;
     }
 
     .img-principal {
