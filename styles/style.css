@@ -228,6 +228,14 @@ header {
         width: 90%;
     }
 
+    .detail-content {
+        font-size: 0.95rem;
+    }
+
+    .container-return__box__msg {
+        font-size: 0.85rem;
+    }
+
     .img-principal {
         display: none;
     }
