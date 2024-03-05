@@ -25,7 +25,7 @@ header {
 
 .container {
     width: 100%;
-    height: 93.5vh;
+    height: 93.7vh;
     display: flex;
     justify-content:space-around;
     background-color: var(--primary-color);
@@ -151,10 +151,39 @@ header {
 }
 
 .rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     text-align: center;
-    padding: 1rem;
+    padding: 0.25rem;
     background-color: #3c3c3c;
+}
+
+.rodape-identification {
     font-size: 1.5rem;
+}
+
+.rodape-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+
+.rodape-images-icon-linkd {
+    width: 3rem;
+    height: 3rem;
+}
+
+.rodape-images-icon-linkd:hover, .rodape-images-icon-git:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 4px var(--quaternary-color);
+}
+
+.rodape-images-icon-git {
+    width: 3rem;
+    height: 3rem;
 }
 
 
@@ -241,13 +270,40 @@ header {
     }
 
     .rodape {
-        font-size: 1.25rem;
+        padding: 0.75rem;
     }
+    
+    .rodape-identification {
+        font-size: 1rem;
+    }
+    
+    .rodape-images {
+        gap: 0.5rem;
+    }
+    
+    
+    .rodape-images-icon-linkd {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .rodape-images-icon-git {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
 }
 
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
     
+    header {
+        position:static;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        margin: 0;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -256,8 +312,7 @@ header {
     }
 
     .container__form {
-        margin: 5% 0 10%;
-        padding-top: 4rem;
+        margin: 0 0 10%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
