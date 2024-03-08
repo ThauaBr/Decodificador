@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 :root{
-    --primary-color: rgb(31, 29, 29);
-    --secundary-color: #3c3c3c;
+    --primary-color: #ff92db;
+    --secundary-color: #ff8bd5;
     --tertiary-color: white;
-    --quaternary-color: #39ff14;
+    --quaternary-color: #cc3687;
 }
 
 
