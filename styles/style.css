@@ -59,7 +59,7 @@ header {
 .container-form__rodape__alert {
     font-size: 1.25rem;
     color: var(--tertiary-color);
-    text-shadow: 0 0 10px var(--quaternary-color;
+    text-shadow: 0 0 10px var(--quaternary-color);
 }
 
 .container-form__rodape__buttons {
